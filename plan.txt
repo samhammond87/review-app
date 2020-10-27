@@ -1,0 +1,25 @@
+Zomato clone
+
+- rails new zomato-clone -d postgresql -T
+- User stories
+  - As a user I can see all restaurants displayed on index
+  - As a user I can create and update my restaurants
+  - As a user I can visit a restaurants show page or navigate to that page from the index
+  - As a user I can see the restaurant reviews
+  - As a user I can search for a restaurant by name
+  - As a user I can like a restaurant
+- ERD
+  - Restaurant: name, opening hours, rating, contact number, cuisine, cost for 2
+  - Address: street, suburb, postcode, state, country
+  - Reviews: description, stars
+  - Users: email
+  - Likes: user_id, restaurant_id
+- Wireframe
+- Associations
+  - restaurant has_many reviews 
+  - restaurant has_one address
+  - user has_many reviews
+  - restaurant has many likes and a user has many likes
+  - user has_many restaurants
+- Talk a bit about polymorphic, not needed in this app
+- Write the code, do first couple of user stories
